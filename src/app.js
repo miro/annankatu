@@ -52,7 +52,21 @@ let view = Cycle.createView(model => {
   };
 
   function renderHeader(progress) {
-    return h('.row', [
+    return [
+    h('.row', [
+      h('.col-md-12', [
+        h('h2', {
+          style: mergeStyles(textStyle, {
+            'height': '45px',
+            'padding': '12px 0 0 212px',
+            'background-image': 'url(futu-logo.png)',
+            'background-position': 'center left',
+            'background-repeat': 'no-repeat',
+          })
+        }, ' Helsinki moves!'),
+      ])
+    ]),
+    h('.row', [
       h('.col-md-4', [
         h('h3.text-left', {
           style: mergeStyles(
@@ -74,7 +88,7 @@ let view = Cycle.createView(model => {
             margin: '10px 0'})},
           'Annankatu 34B')
       ])
-    ]);
+    ])];
   }
 
   function renderProgressBar(progress, floatProgress) {
