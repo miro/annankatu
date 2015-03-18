@@ -57,11 +57,11 @@ let view = Cycle.createView(model => {
       h('.col-md-12', [
         h('h2', {
           style: mergeStyles(textStyle, {
-            'height': '45px',
-            'padding': '12px 0 0 212px',
-            'background-image': 'url(dist/img/futu-logo.png)',
-            'background-position': 'center left',
-            'background-repeat': 'no-repeat',
+            height: '45px',
+            padding: '12px 0 0 212px',
+            backgroundImage: 'url(dist/img/futu-logo.png)',
+            backgroundPosition: 'center left',
+            backgroundRepeat: 'no-repeat',
           })
         }, ' Helsinki moves!'),
       ])
