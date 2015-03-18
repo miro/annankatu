@@ -59,7 +59,7 @@ let view = Cycle.createView(model => {
           style: mergeStyles(textStyle, {
             'height': '45px',
             'padding': '12px 0 0 212px',
-            'background-image': 'url(futu-logo.png)',
+            'background-image': 'url(dist/img/futu-logo.png)',
             'background-position': 'center left',
             'background-repeat': 'no-repeat',
           })
